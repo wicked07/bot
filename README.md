@@ -725,7 +725,7 @@
       msg1 += " 4) Respeitar os Adms e Mods;s ";
       msg1 += " 5) Nao Fiquem Pedindo Cargos ";
       msg2 = " 6) SE NÃO RESPEITAR É KICK !";
-      msg2 += "";
+      msg2 += "Acesse:https://www.facebook.com/EspecialistasDasZoeiras";
       API.sendChat(msg1);
       return setTimeout((function() {
         return API.sendChat(msg2);
