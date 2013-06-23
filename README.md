@@ -65,7 +65,7 @@
       {
         interval: 7,
         offset: 0,
-        msg: ""
+        msg: "Entrem: https://www.facebook.com/EspecialistasDasZoeiras"
       }, {
         interval: 5,
         offset: 0,
@@ -368,8 +368,8 @@
     me = API.getSelf();
     myname = me.username;
     currentversion = "1.0.0";
-    log("BOT editado pelo C??l?? V?c???  versão " + currentversion + " Chupa Jô");
-    return API.sendChat("/me Não se Preocupe o Papai Chegou");
+    log("BOT editado pelo Rafael Moraes  versão " + currentversion + " Chupa Carlos");
+    return API.sendChat("/me On ");
   };
 
   populateUserData = function() {
@@ -753,7 +753,7 @@
     roomHelpCommand.prototype.functionality = function() {
       var msg1, msg2;
 
-      msg1 = "Bem vindo a Sala ! Para ser o DJ, Criar uma lista de reprodução e coloque Musica do Youtube ou soundcloud. ";
+      msg1 = "Bem vindo a Sala EspecialistasDasZoeiras! Para ser o DJ, Criar uma lista de reprodução e coloque Musica do Youtube ou soundcloud. ";
       msg1 += "Se é novo procure pelo seu nome na sua tela (do lado da cabine de dj e clique) e depois mude o nome.";
       msg2 = "Para Ganhar Pontos é só clica em Bacana. ";
       msg2 += "Digite !regras pare ler as porra das regras.";
