@@ -368,7 +368,7 @@
     me = API.getSelf();
     myname = me.username;
     currentversion = "1.0.0";
-    log("BOT editado pelo Rafael Moraes  versão " + currentversion + " Chupa Jô");
+    log("BOT editado pelo C??l?? V?c???  versão " + currentversion + " Chupa Jô");
     return API.sendChat("/me On");
   };
 
@@ -693,7 +693,7 @@
     themeCommand.prototype.functionality = function() {
       var msg;
 
-      msg = "Temas permitidos aqui na sala. electro, rap(bom), ";
+      msg = "Temas permitidos aqui na sala. electro,techno, ";
       msg += "dubstep e videos de humor.";
       return API.sendChat(msg);
     };
@@ -724,7 +724,7 @@
       msg1 += " 3) Nao escrever em colorido ";
       msg1 += " 4) Respeitar os Adms e Mods;s ";
       msg1 += " 5) Nao Fiquem Pedindo Cargos ";
-      msg2 = "Curta: https://www.facebook.com/CantadasdiPedreiro ";
+      msg2 = "Curta: https://www.facebook.com/CantadasdiPedreiro  !";
       msg2 += "";
       API.sendChat(msg1);
       return setTimeout((function() {
@@ -753,7 +753,7 @@
     roomHelpCommand.prototype.functionality = function() {
       var msg1, msg2;
 
-      msg1 = "Bem vindo a Sala Tomorrowland Official Songs! Para ser o DJ, Criar uma lista de reprodução e coloque Musica do Youtube ou soundcloud. ";
+      msg1 = "Bem vindo a Sala! Para ser o DJ, Criar uma lista de reprodução e coloque Musica do Youtube ou soundcloud. ";
       msg1 += "Se é novo procure pelo seu nome na sua tela (do lado da cabine de dj e clique) e depois mude o nome.";
       msg2 = "Para Ganhar Pontos é só clica em Bacana. ";
       msg2 += "Digite !regras pare ler as porra das regras.";
@@ -2108,7 +2108,7 @@ function checkSkipped() {
 
 $('#plugbot-css').remove();
 $('#plugbot-js').remove();
-$('#chat-messages').append('<div class="chat-update"><span class="chat-text">Bem vindo auto-skip editado pelo Rafafael Moraes  1.0</span></div>');
+$('#chat-messages').append('<div class="chat-update"><span class="chat-text">Bem vindo auto-skip editado pelo C??l?? V?c???  1.0</span></div>');
 $('body').prepend('<style type="text/css" id="plug-css">' + "\n" + styles.join("\n") + "\n" + '</style>');
 $('body').append('</div><div id="side-right" class="sidebar">' +
 '    <div class="sidebar-handle"><span>|||</span></div>' +
