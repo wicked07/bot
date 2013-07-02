@@ -1667,8 +1667,8 @@ var COOKIE_STREAM = 'stream';
 var COOKIE_HIDE_VIDEO = 'hidevideo';
 var MAX_USERS_WAITLIST = 50;
 
-var fbMsg = ["Entrem na Pagina da sala: https://www.facebook.com/PedobearDasPutarias1"];
-var rulesMsg = "Regras: 1) Video no Maximo 6 minutos. 2) Sem Flood! 3) Nao escrever em colorido 4) Respeitar os Adms e Mods ;s 5) Nao Fiquem Pedindo Cargos. 6) SE NÃO RESPEITAR É KICK ! E POR ULTIMO NÃO USEM DROGAS!";
+var fbMsg = ["Entrem na Pagina da sala: https://www.facebook.com/CantadasdiPedreiro"];
+var rulesMsg = "Regras: 1) Video no Maximo 6 minutos. 2) Sem Flood! 3) Nao escrever em colorido 4) Respeitar os Adms e Mods ;s 5) Nao Fiquem Pedindo Cargos. ";
 var skipMsg = ["por favor não pedir para pular as músicas, quer pular da deslike."];
 var fansMsg = ["Virem meu Fan que eu retribuo vocês, não esqueça de da @ Menções"];
 var wafflesMsg = ["Ppkas para todos! # - (> _ <) - # "," Alguém disse ppkas? # - (> _ <) - #"];
