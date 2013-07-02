@@ -368,8 +368,8 @@
     me = API.getSelf();
     myname = me.username;
     currentversion = "1.0.0";
-    log("BOT editado pelo C??l?? V?c???  versão " + currentversion + " Chupa Jô");
-    return API.sendChat("/me Não se Preocupe o Papai Chegou");
+    log("BOT editado pelo Rafal Moraes  versão " + currentversion + " Chupa Jô");
+    return API.sendChat("/me on");
   };
 
   populateUserData = function() {
