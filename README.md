@@ -693,8 +693,8 @@
     themeCommand.prototype.functionality = function() {
       var msg;
 
-      msg = "Temas permitidos aqui na sala. electro, rap(bom), ";
-      msg += "dubstep e videos de humor.";
+      msg = "Temas permitidos aqui na sala. electro, techno, ";
+      msg += "dubstep.";
       return API.sendChat(msg);
     };
 
