@@ -65,7 +65,7 @@
       {
         interval: 7,
         offset: 0,
-        msg: "Entrem na nossa pagina: https://www.facebook.com/PedobeardasPutarias3?fref=ts"
+        msg: "Entrem na nossa pagina: https://www.facebook.com/CantadasdiPedreiro"
       }, {
         interval: 5,
         offset: 0,
@@ -724,8 +724,8 @@
       msg1 += " 3) Nao escrever em colorido ";
       msg1 += " 4) Respeitar os Adms e Mods;s ";
       msg1 += " 5) Nao Fiquem Pedindo Cargos ";
-      msg2 = " 6) SE NÃO RESPEITAR É KICK !";
-      msg2 += " E POR ULTIMO NÃO USEM DROGAS! ";
+      msg2 = "Curta: https://www.facebook.com/CantadasdiPedreiro";
+      msg2 += "";
       API.sendChat(msg1);
       return setTimeout((function() {
         return API.sendChat(msg2);
@@ -753,7 +753,7 @@
     roomHelpCommand.prototype.functionality = function() {
       var msg1, msg2;
 
-      msg1 = "Bem vindo a Sala Oficial da Pedobear! Para ser o DJ, Criar uma lista de reprodução e coloque Musica do Youtube ou soundcloud. ";
+      msg1 = "Bem vindo a Sala! Para ser o DJ, Criar uma lista de reprodução e coloque Musica do Youtube ou soundcloud. ";
       msg1 += "Se é novo procure pelo seu nome na sua tela (do lado da cabine de dj e clique) e depois mude o nome.";
       msg2 = "Para Ganhar Pontos é só clica em Bacana. ";
       msg2 += "Digite !regras pare ler as porra das regras.";
