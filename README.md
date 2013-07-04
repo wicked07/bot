@@ -65,7 +65,7 @@
       {
         interval: 7,
         offset: 0,
-        msg: "Entrem na nossa pagina: https://www.facebook.com/CantadasdiPedreiro"
+        msg: "Stay active in chat and Voting. Be will not be Retrieved List and DJ booth!"
       }, {
         interval: 5,
         offset: 0,
@@ -607,7 +607,7 @@
     newsCommand.prototype.functionality = function() {
       var msg;
 
-      msg = "/me Acaba de Ativar modo Cota e roubou sua vaga na Faculdade e sua vez na Cabine de DJ!";
+      msg = "";
       return API.sendChat(msg);
     };
 
@@ -723,8 +723,12 @@
       msg1 += " 2) Sem Flood! ";
       msg1 += " 3) Nao escrever em colorido ";
       msg1 += " 4) Respeitar os Adms e Mods;s ";
-      msg1 += " 5) Nao Fiquem Pedindo Cargos ";
-      msg2 = "Curta: https://www.facebook.com/CantadasdiPedreiro";
+      msg1 += " 5) Nao Fiquem Pedindo cargos. ";
+      msg1 += " 1) Maximum Video in 6 minutes. ";
+      msg1 += " 2) No Flood!";
+      msg1 += " 3) Do not write in color";
+      msg1 += " 4) Respect the Mods and ADMS; s";
+      msg1 += " 5) Do not Be Asking positions";msg2 = "";
       msg2 += "";
       API.sendChat(msg1);
       return setTimeout((function() {
@@ -756,7 +760,7 @@
       msg1 = "Bem vindo a Sala! Para ser o DJ, Criar uma lista de reprodução e coloque Musica do Youtube ou soundcloud. ";
       msg1 += "Se é novo procure pelo seu nome na sua tela (do lado da cabine de dj e clique) e depois mude o nome.";
       msg2 = "Para Ganhar Pontos é só clica em Bacana. ";
-      msg2 += "Digite !regras pare ler as porra das regras.";
+      msg2 += "Digite !regras pare ler as  regras.";
       API.sendChat(msg1);
       return setTimeout((function() {
         return API.sendChat(msg2);
@@ -1667,7 +1671,7 @@ var COOKIE_STREAM = 'stream';
 var COOKIE_HIDE_VIDEO = 'hidevideo';
 var MAX_USERS_WAITLIST = 50;
 
-var fbMsg = ["Entrem na Pagina da sala: https://www.facebook.com/CantadasdiPedreiro"];
+var fbMsg = [""];
 var rulesMsg = "Regras: 1) Video no Maximo 6 minutos. 2) Sem Flood! 3) Nao escrever em colorido 4) Respeitar os Adms e Mods ;s 5) Nao Fiquem Pedindo Cargos. ";
 var skipMsg = ["por favor não pedir para pular as músicas, quer pular da deslike."];
 var fansMsg = ["Virem meu Fan que eu retribuo vocês, não esqueça de da @ Menções"];
