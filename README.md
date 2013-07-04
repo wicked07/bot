@@ -63,7 +63,7 @@
 
     settings.prototype.songIntervalMessages = [
       {
-        interval: 7,
+        interval: 6,
         offset: 0,
         msg: "Stay active in chat and Voting. Be will not be Retrieved List and DJ booth!"
       }, {
@@ -368,7 +368,7 @@
     me = API.getSelf();
     myname = me.username;
     currentversion = "1.0.0";
-    log("BOT editado pelo Rafal Moraes  versão " + currentversion + " Chupa Jô");
+    log("BOT editado pelo Rafal Moraes  versão " + currentversion + " Chupa carlos ");
     return API.sendChat("/me on");
   };
 
@@ -762,8 +762,9 @@
 
       msg1 = "Bem vindo a Sala! Para ser o DJ, Criar uma lista de reprodução e coloque Musica do Youtube ou soundcloud. ";
       msg1 += "Se é novo procure pelo seu nome na sua tela (do lado da cabine de dj e clique) e depois mude o nome.";
-      msg2 = "Para Ganhar Pontos é só clica em Bacana. ";
-      msg2 += "Digite !regras pare ler as  regras.";
+      msg1 += "Para Ganhar Pontos é só clica em Bacana. ";      
+      msg1 += "Digite !regras pare ler as  regras.";
+      msg2 = 
       API.sendChat(msg1);
       return setTimeout((function() {
         return API.sendChat(msg2);
@@ -805,7 +806,7 @@
         }
       }
       if (msg === '') {
-        return API.sendChat("Se fudeu não tem ninguém AFK.");
+        return API.sendChat(" ninguém AFK.");
       } else {
         return API.sendChat('AFKs: ' + msg);
       }
@@ -935,7 +936,7 @@
     reloadCommand.prototype.functionality = function() {
       var pupSrc;
 
-      API.sendChat('/me Não se Preocupe o Papai Chegou');
+      API.sendChat('/me ON');
       undoHooks();
       pupSrc = data.pupScriptUrl;
       data.implode();
@@ -1472,7 +1473,7 @@
       sender = API.getUser(chat.fromID);
       if (!sender.ambassador && !sender.moderator && !sender.owner && !sender.superuser) {
         if (!data.users[chat.fromID]["protected"]) {
-          API.sendChat("Sem spam seu preto");
+          API.sendChat("Sem spam ");
           return API.moderateDeleteChat(chat.chatID);
         } else {
           return API.sendChat("Eu deveria expulsá-lo, mas estamos aqui para se diverti!");
@@ -1686,7 +1687,7 @@ var afkMsg = ["Eu estou indo embora e um Vão se foderem."," Vou fica AFK por um
 var backMsg = ["Estou de volta minhas putinhas! "," Adivinha quem está de volta? Quem sera? Claro que é eu o seu Pai :D"];
 
 var autoAwayMsg = ["Atualmente estou AFK "," Eu estou AFK "," Eu estou em uma aventura (afk) "," desapareceu por um momento "," não está presente no teclado."];
-var autoSlpMsg = ["Atualmente estou dormindo "," Estou comendo ppkas em meus sonhos"];
+var autoSlpMsg = ["Atualmente estou dormindo "," Dormindo"];
 var autoWrkMsg = ["Atualmente estou ocupado "," estou ocupado "," fazendo um trabalho relacionado a ppkas."];
 
 overPlayed = ["1:vZyenjZseXA", "1:ZT4yoZNy90s", "1:Bparw9Jo3dk", "1:KrVC5dm5fFc","1:Ys9sIqv42lo", "1:1y6smkh6c-0", "1:jZL-RUZUoGY", "1:CrdoD9T1Heg", "1:6R_Rn1iP82I", "1:ea9tluQ_QtE", "1:f9EM8T5K6d8", "1:aHjpOzsQ9YI", "1:3vC5TsSyNjU", "1:yXLL46xkdlY", "1:_t2TzJOyops", "1:BGpzGu9Yp6Y", "1:YJVmu6yttiw", "1:WSeNSzJ2-Jw", "1:2cXDgFwE13g", "1:PR_u9rvFKzE", "1:i1BDGqIfm8U"];overPlayed = ["1:vZyenjZseXA", "1:ZT4yoZNy90s", "1:Bparw9Jo3dk", "1:KrVC5dm5fFc","1:Ys9sIqv42lo", "1:1y6smkh6c-0", "1:jZL-RUZUoGY", "1:CrdoD9T1Heg", "1:6R_Rn1iP82I", "1:ea9tluQ_QtE", "1:f9EM8T5K6d8", "1:aHjpOzsQ9YI", "1:3vC5TsSyNjU", "1:yXLL46xkdlY", "1:_t2TzJOyops", "1:BGpzGu9Yp6Y", "1:YJVmu6yttiw", "1:WSeNSzJ2-Jw", "1:2cXDgFwE13g", "1:PR_u9rvFKzE", "1:i1BDGqIfm8U"];
@@ -2005,7 +2006,7 @@ function djAdvanced(obj) {
 
 function overPlayedSongs(data) {
 	if (overPlayed.indexOf(Models.room.data.media.id) > -1) {
-		API.sendChat("/me auto skip ligado, Musica Repetida. Fuck you baby!");
+		API.sendChat("/me auto skip on,music repeated/musica repetida!");
 		setTimeout("new RoomPropsService(document.location.href.split('/')[3],true,true,1,5);", 300);
 		setTimeout("new ModerationForceSkipService;", 600);
 		setTimeout("new RoomPropsService(document.location.href.split('/')[3],false,true,1,5);", 900);
