@@ -728,10 +728,10 @@
       msg1 += " 4) Respeitar os Adms e Mods;s ";
       msg1 += " 5) Nao Fiquem Pedindo cargos. ";
       msg2 = " 1) Maximum Video in 6 minutes. ";
-      msg2 += " 2) No Flood!";
-      msg2 += " 3) Do not write in color";
-      msg2 += " 4) Respect the Mods and ADMS; s";
-      msg2 += " 5) Do not Be Asking positions";msg2 = "";
+      msg2 += " 2) No Flood! ";
+      msg2 += " 3) Do not write in color ";
+      msg2 += " 4) Respect the Mods and ADMS ";
+      msg2 += " 5) Do not Be Asking positions ";
       msg2 += "";
       API.sendChat(msg1);
       return setTimeout((function() {
