@@ -599,7 +599,7 @@
     }
 
     newsCommand.prototype.init = function() {
-      this.command = '!cotas';
+      this.command = '!bemvindo';
       this.parseType = 'startsWith';
       return this.rankPrivelege = 'featured';
     };
@@ -607,7 +607,7 @@
     newsCommand.prototype.functionality = function() {
       var msg;
 
-      msg = "";
+      msg = "Welcome to hall!/ Bem vindos a sala !";
       return API.sendChat(msg);
     };
 
@@ -691,10 +691,10 @@
     };
 
     themeCommand.prototype.functionality = function() {
-      var msg;
+      var msg1, msg2;
 
-      msg = "Temas permitidos aqui na sala. electro, techno, ";
-      msg += "dubstep.";
+      msg1 = "Themes Allowed Here in the room/Temas permitidos aqui na sala. ";
+      msg2 += "electro, techno,dubstep and pop.";
       return API.sendChat(msg);
     };
 
@@ -724,11 +724,11 @@
       msg1 += " 3) Nao escrever em colorido ";
       msg1 += " 4) Respeitar os Adms e Mods;s ";
       msg1 += " 5) Nao Fiquem Pedindo cargos. ";
-      msg1 += " 1) Maximum Video in 6 minutes. ";
-      msg1 += " 2) No Flood!";
-      msg1 += " 3) Do not write in color";
-      msg1 += " 4) Respect the Mods and ADMS; s";
-      msg1 += " 5) Do not Be Asking positions";msg2 = "";
+      msg2 += " 1) Maximum Video in 6 minutes. ";
+      msg2 += " 2) No Flood!";
+      msg2 += " 3) Do not write in color";
+      msg2 += " 4) Respect the Mods and ADMS; s";
+      msg2 += " 5) Do not Be Asking positions";msg2 = "";
       msg2 += "";
       API.sendChat(msg1);
       return setTimeout((function() {
