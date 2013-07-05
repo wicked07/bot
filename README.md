@@ -607,7 +607,7 @@
     newsCommand.prototype.functionality = function() {
       var msg;
 
-      msg = "Welcome to hall!/ Bem vindos a sala !";
+      msg = "Welcome to hall !/ Bem vindos a sala !";
       return API.sendChat(msg);
     };
 
@@ -694,7 +694,7 @@
       var msg1, msg2;
 
       msg1 = "Themes Allowed Here in the room/Temas permitidos aqui na sala. ";
-      msg2 = "electro, techno,dubstep and pop.";
+      msg2 = "Electro, Dubstep,Techno ,DnB , EDM.";
       API.sendChat(msg1);
       return setTimeout((function() {
         return API.sendChat(msg2);
@@ -928,7 +928,7 @@
     }
 
     reloadCommand.prototype.init = function() {
-      this.command = '!reload';
+      this.command = '!refresh';
       this.parseType = 'exact';
       return this.rankPrivelege = 'Host';
     };
