@@ -63,11 +63,11 @@
 
     settings.prototype.songIntervalMessages = [
       {
-        interval: 6,
-        offset: 0,
-        msg: "Stay active in chat and Voting. Be will not be Retrieved List and DJ booth!"
-      }, {
         interval: 5,
+        offset: 0,
+        msg: "Enjoy/Curta https://www.facebook.com/EDTentertainment"
+      }, {
+        interval: 4,
         offset: 0,
         msg: "Mantenha-se ativo no bate-papo e Votando. Ser não sera Retirado da Lista de DJ e da Cabine!"
       }
@@ -599,7 +599,7 @@
     }
 
     newsCommand.prototype.init = function() {
-      this.command = '!bemvindo';
+      this.command = '!newuser';
       this.parseType = 'startsWith';
       return this.rankPrivelege = 'featured';
     };
@@ -1173,7 +1173,7 @@
     voteRatioCommand.prototype.init = function() {
       this.command = '!voteratio';
       this.parseType = 'startsWith';
-      return this.rankPrivelege = 'bouncer';
+      return this.rankPrivelege = 'manager';
     };
 
     voteRatioCommand.prototype.functionality = function() {
@@ -1318,7 +1318,7 @@
     }
 
     lockskipCommand.prototype.init = function() {
-      this.command = '!repetida';
+      this.command = '!lockskip';
       this.parseType = 'startsWith';
       return this.rankPrivelege = 'bouncer';
     };
@@ -1627,7 +1627,7 @@ var words = {
 "Volume" : "Crank the Volume!",
 "Current DJ" : "Disk Jockey",
 "Crowd Response" : "Crowd Reaction!",
-"Fans":"Stalkers!"};
+"Fans":"Fans"};
 
 String.prototype.prepareRegex = function() {
 return this.replace(/([\[\]\^\&\$\.\(\)\?\/\\\+\{\}\|])/g, "\\$1");
@@ -1675,8 +1675,8 @@ var COOKIE_STREAM = 'stream';
 var COOKIE_HIDE_VIDEO = 'hidevideo';
 var MAX_USERS_WAITLIST = 50;
 
-var fbMsg = [""];
-var rulesMsg = "Regras: 1) Video no Maximo 6 minutos. 2) Sem Flood! 3) Nao escrever em colorido 4) Respeitar os Adms e Mods ;s 5) Nao Fiquem Pedindo Cargos. ";
+var fbMsg = ["Enjoy/Curta: https://www.facebook.com/EDTentertainment"];
+var rulesMsg = "Join/Entre https://www.facebook.com/groups/EDTplugdj/"];
 var skipMsg = ["por favor não pedir para pular as músicas, quer pular da deslike."];
 var fansMsg = ["Virem meu Fan que eu retribuo vocês, não esqueça de da @ Menções"];
 var wafflesMsg = ["Ppkas para todos! # - (> _ <) - # "," Alguém disse ppkas? # - (> _ <) - #"];
@@ -1688,7 +1688,7 @@ var backMsg = ["Estou de volta minhas putinhas! "," Adivinha quem está de volta
 
 var autoAwayMsg = ["Atualmente estou AFK "," Eu estou AFK "," Eu estou em uma aventura (afk) "," desapareceu por um momento "," não está presente no teclado."];
 var autoSlpMsg = ["Atualmente estou dormindo "," Dormindo"];
-var autoWrkMsg = ["Atualmente estou ocupado "," estou ocupado "," fazendo um trabalho relacionado a ppkas."];
+var autoWrkMsg = ["Atualmente estou ocupado "," estou ocupado "," Ocupado."];
 
 overPlayed = ["1:vZyenjZseXA", "1:ZT4yoZNy90s", "1:Bparw9Jo3dk", "1:KrVC5dm5fFc","1:Ys9sIqv42lo", "1:1y6smkh6c-0", "1:jZL-RUZUoGY", "1:CrdoD9T1Heg", "1:6R_Rn1iP82I", "1:ea9tluQ_QtE", "1:f9EM8T5K6d8", "1:aHjpOzsQ9YI", "1:3vC5TsSyNjU", "1:yXLL46xkdlY", "1:_t2TzJOyops", "1:BGpzGu9Yp6Y", "1:YJVmu6yttiw", "1:WSeNSzJ2-Jw", "1:2cXDgFwE13g", "1:PR_u9rvFKzE", "1:i1BDGqIfm8U"];overPlayed = ["1:vZyenjZseXA", "1:ZT4yoZNy90s", "1:Bparw9Jo3dk", "1:KrVC5dm5fFc","1:Ys9sIqv42lo", "1:1y6smkh6c-0", "1:jZL-RUZUoGY", "1:CrdoD9T1Heg", "1:6R_Rn1iP82I", "1:ea9tluQ_QtE", "1:f9EM8T5K6d8", "1:aHjpOzsQ9YI", "1:3vC5TsSyNjU", "1:yXLL46xkdlY", "1:_t2TzJOyops", "1:BGpzGu9Yp6Y", "1:YJVmu6yttiw", "1:WSeNSzJ2-Jw", "1:2cXDgFwE13g", "1:PR_u9rvFKzE", "1:i1BDGqIfm8U"];
 
@@ -1805,7 +1805,7 @@ function displayUI() {
 		+ 	'<a id="plug-btn-queue" title="toggles Auto DJ" style="color:' + colorQueue + '">auto queue</a>'
 		+ 	'<a id="plug-btn-stream" title="toggles Ativa e Desativar Video/Audio" style="color:' + colorStream + '">stream</a>'
 		+ 	'<a id="plug-btn-hidevideo" title="toggles Esconde video" style="color:' + colorVideo + '">hide video</a>'
-		+	'<a id="plug-btn-rules" title="sends rules" style="color:#FF8C00">rules</a>'
+		+	'<a id="plug-btn-rules" title="sends rules" style="color:#FF8C00">Grupo</a>'
 		+	'<a id="plug-btn-face" title="sends fb link" style="color:#FF8C00">like our fb</a>'
 		+	'<a id="plug-btn-fans" title="sends fan message" style="color:#FF8C00">no fans</a>'
 		+	'<a id="plug-btn-noskip" title="send no skip message" style="color:#FF8C00">no skip</a>'
@@ -2011,7 +2011,7 @@ function overPlayedSongs(data) {
 		setTimeout("new ModerationForceSkipService;", 600);
 		setTimeout("new RoomPropsService(document.location.href.split('/')[3],false,true,1,5);", 900);
 	}
-	if (Models.room.data.media.duration > 481) {
+	if (Models.room.data.media.duration > 390) {
 		API.sendChat("/me auto skip ligado, música com mais de 6 minutos seram puladas.");
 		setTimeout("new RoomPropsService(document.location.href.split('/')[3],true,true,1,5);", 300);
 		setTimeout("new ModerationForceSkipService;", 600);
