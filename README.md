@@ -1676,7 +1676,7 @@ var COOKIE_HIDE_VIDEO = 'hidevideo';
 var MAX_USERS_WAITLIST = 50;
 
 var fbMsg = ["Enjoy/Curta: https://www.facebook.com/EDTentertainment"];
-var rulesMsg = "Join/Entre https://www.facebook.com/groups/EDTplugdj/"];
+var rulesMsg = "Join/Entre https://www.facebook.com/groups/EDTplugdj/";
 var skipMsg = ["por favor não pedir para pular as músicas, quer pular da deslike."];
 var fansMsg = ["Virem meu Fan que eu retribuo vocês, não esqueça de da @ Menções"];
 var wafflesMsg = ["Ppkas para todos! # - (> _ <) - # "," Alguém disse ppkas? # - (> _ <) - #"];
