@@ -1640,7 +1640,7 @@
     if (data.currentsong === null) {
       data.newSong();
     } else {
-      API.sendChat("/em: " + data.currentsong.title + " por " + data.currentsong.author + ". :+1: " + data.currentwoots + ", :-1: " + data.currentmehs + ", :heart: " + data.currentcurates + ".");
+      API.sendChat("/me: " + data.currentsong.title + " por " + data.currentsong.author + ". :+1: " + data.currentwoots + ", :-1: " + data.currentmehs + ", :heart: " + data.currentcurates + ".");
       data.newSong();
       document.getElementById("button-vote-positive").click();
     }    
@@ -1697,16 +1697,6 @@
           return API.sendChat("I'm supposed to kick you, but you're just too darn pretty.");
         }
       }
-    }
-  };
-
-  beggar = function(chat) {
-    var msg, r, responses;
-    msg = chat.message.toLowerCase();
-    responses = ["Good idea @{beggar}!  Don't earn your fans or anything thats so yesterday", "Guys @{beggar} asked us to fan him!  Lets all totally do it! à² _à² ", "srsly @{beggar}? à² _à² ", "@{beggar}.  Earning his fans the good old fashioned way.  Hard work and elbow grease.  A true american."];
-    r = Math.floor(Math.random() * responses.length);
-    if (msg.indexOf('fan me') !== -1 || msg.indexOf('fan for fan') !== -1 || msg.indexOf('fan pls') !== -1 || msg.indexOf('fan4fan') !== -1 || msg.indexOf('add me to fan') !== -1) {
-      return API.sendChat(responses[r].replace("{beggar}", chat.from));
     }
   };
 
