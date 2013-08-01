@@ -1640,7 +1640,7 @@
     if (data.currentsong === null) {
       data.newSong();
     } else {
-      API.sendChat("/me: " + data.currentsong.title + " por " + data.currentsong.author + ". :+1: " + data.currentwoots + ", :-1: " + data.currentmehs + ", :heart: " + data.currentcurates + ".");
+      API.sendChat("/me: " + data.currentsong.title + " por " + data.currentsong.author + ". :+1: " + data.current.woots + ", :-1: " + data.current.mehs + ", :heart: " + data.current.curates + ".");
       data.newSong();
       document.getElementById("button-vote-positive").click();
     }    
