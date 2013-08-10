@@ -1,4 +1,4 @@
-overPlayed = [""];
+overPlayed = ["1:chV6DSBeI7k"];
 
 function autoSkip() {
   if (overPlayed.indexOf(Models.room.data.media.id) > -1) {
